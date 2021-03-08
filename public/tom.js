@@ -61,3 +61,11 @@ function getCycleTileURL(bounds) {
      return this.url + z + "/" + x + "/" + y + "." + this.type;
    }
 }
+
+
+function getPermission() {if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(getPosition);}
+  }
+  function getPosition(position) {
+    console.log(position.coords.latitude, position.coords.longitude);
+  }

@@ -1,10 +1,15 @@
 import './MapContainer.css';
+import React from 'react';
+
+import { IonButton, IonIcon} from '@ionic/react';
+import { star } from 'ionicons/icons';
 
 interface ContainerProps { }
 
 const MapContainer: React.FC<ContainerProps> = () => {
   return (
     <div className="container">
+    
      <div id="header">
    <div id="content">Karte (Testversion)</div>
    <div id="osm">© <a href="http://www.openstreetmap.org">OpenStreetMap</a>
@@ -19,3 +24,4 @@ const MapContainer: React.FC<ContainerProps> = () => {
 };
 
 export default MapContainer;
+
